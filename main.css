@@ -1,0 +1,67 @@
+:root {
+    --bg-color: #f0f4f8;
+    --text-color: #1f2937;
+    --card-bg: #ffffff;
+  }
+  
+  body.dark {
+    --bg-color: #1f2937;
+    --text-color: #f9fafb;
+    --card-bg: #2d3748;
+  }
+  
+  body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 2rem;
+  }
+  
+  .dashboard {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  section {
+    background: var(--card-bg);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  #clock {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  input#todo-input {
+    padding: 0.6rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  ul#todo-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul#todo-list li {
+    background: rgba(0,0,0,0.05);
+    padding: 0.6rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+  }
+  
+  .theme-toggle button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
